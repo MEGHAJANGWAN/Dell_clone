@@ -1,0 +1,607 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+/* ==============HEADER=============== */ 
+/* =================nav part 1================ */
+.nav-part1{
+    display: flex;
+    gap: 5px;
+    margin-left: 50px;
+}
+.nav-part1 [type="text"]{
+    width: 600px;
+    border: none;
+    padding-left: 10px;
+    outline: none ;
+}
+#magnifying-glass:hover {
+    background-color: rgb(199, 194, 194);
+}
+.nav-part1 div:nth-child(2) {
+    margin-right: 12.6rem ;
+    padding-right: 10px ;
+    border: 1px solid black;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    height: 35px; 
+    margin-top: 20px;
+    margin-left: 60px;
+}
+.nav-part1 div:nth-child(1),
+.nav-part div:nth-child(2){
+    margin-top: 20px;
+}
+.nav-part1 div:nth-child(3),
+.nav-part1 div:nth-child(4),
+.nav-part1 div:nth-child(5),
+.nav-part1 div:nth-child(6) {
+    padding: 20px 8px;
+}
+.nav-part1 div:nth-child(3):hover {
+    background-color: #f3f3f4;
+}
+.nav-part1 div:nth-child(5):hover {
+    background-color: #f3f3f4;
+
+}
+.nav-part1 div:nth-child(6):hover {
+    background-color: #f3f3f4;
+}
+@media (min-width: 1024px) and (max-width: 1497px) {
+    .nav-part1 div:nth-child(3),
+    .nav-part1 div:nth-child(4),
+    .nav-part1 div:nth-child(5),
+    .nav-part1 div:nth-child(6) {
+        padding: 15px 4px;
+        font-size: 15px;
+    }
+    .nav-part1 div:nth-child(2){
+        padding-right: 2px;
+    }
+    .nav-part1{
+        gap: 2px;
+    }
+    .nav-part1 div:nth-child(2) {
+        margin-right: 4.6rem;
+        margin-left: 22px;
+    }
+    .nav-part1{
+        margin-left: 0px;
+    }
+    .nav-part1 [type="text"]{
+        width: 350px;
+    }
+
+}
+/* =================nav part 2================ */
+.nav-part2{
+    display: flex;
+    margin-left: 2.2rem;
+}
+
+.nav-part2 div{
+    padding: 16px 14px;
+    border-bottom: 2.5px solid transparent;
+}
+.nav-part2 div:hover{
+    background-color: #f3f3f4;
+    border-bottom: 2.5px solid rgb(160, 143, 143);
+}
+
+.nav-part2 li{
+    list-style: none;
+    padding: 10px;
+
+}
+.nav-part2 li:hover{
+    background-color: rgb(211, 208, 208);
+}
+.nav-part2 ul{
+    display: block;
+    position: absolute;
+    background-color: white;
+}
+.nav-part2 div:nth-child(1) ul{
+    display: none;
+    position: absolute;
+    top: 112px;
+    left: 35px;
+}
+.nav-part2 div:nth-child(1):hover ul{
+    display: block;
+    z-index: 5;
+}
+.nav-part2 div:nth-child(1):hover .fa-angle-down{
+    transform: rotate(180deg);
+}
+.nav-part2 div:nth-child(2):hover .fa-angle-down{
+    transform: rotate(180deg);
+} 
+.nav-part2 div:nth-child(3):hover .fa-angle-down{
+    transform: rotate(180deg);
+}
+.nav-part2 div:nth-child(4):hover .fa-angle-down{
+    transform: rotate(180deg);
+}
+.nav-part2 div:nth-child(5):hover .fa-angle-down{
+    transform: rotate(180deg);
+}
+.nav-part2 div:nth-child(6):hover .fa-angle-down{
+    transform: rotate(180deg);
+}
+.nav-part2 div:nth-child(2):hover ul {
+    display: block;
+    z-index: 5;
+}
+.nav-part2 div:nth-child(2) ul{
+    display: none;
+    position: absolute;
+    top: 112px;
+    left: 120px;
+}
+
+.nav-part2 div:nth-child(3) ul{
+    display: none;
+    position: absolute;
+    top: 112px;
+    left: 226px;
+}
+.nav-part2 div:nth-child(3):hover ul{
+    display: block;
+    z-index: 5;
+}
+.nav-part2 div:nth-child(4) ul{
+    display: none;
+    position: absolute;
+    top: 112px;
+    left: 339px;
+}
+.nav-part2 div:nth-child(4):hover ul{
+    display: block;
+    z-index: 5;
+}
+.nav-part2 div:nth-child(5) ul{
+    display: none;
+    position: absolute;
+    z-index: 5;
+    top: 112px;
+    left: 444px;
+}
+.nav-part2 div:nth-child(5):hover ul{
+    display: block;
+    z-index: 5;    
+}
+.nav-part2 div:nth-child(6) ul{
+    display: none;
+    position: absolute;
+    top: 112px;
+    left: 547px;
+}
+.nav-part2 div:nth-child(6):hover ul{
+    display: block;
+    z-index: 5;
+}
+
+/* =====================tablet header================== */
+.tablet-header{
+    border: 2px solid black;
+    display: none;
+}
+@media (min-width: 767px) and (max-width: 1024px){
+    .tablet-header{
+        display: block;
+    }
+
+    .nav-part1, .nav-part2 {
+        display: none;
+    }
+}
+
+/* =============mobile header================ */
+.mobile-header {
+        border: 2px solid black;
+        border-bottom: transparent;
+        display: none;
+    }
+
+    @media (max-width: 767px){
+        .mobile-header{
+            display: block;
+        }
+        .navpart1, .navpart2 {
+            display: none;
+        }
+    }
+
+/* =================product animated================ */
+.product-animated{
+    text-align: center;
+    line-height: 31px;
+    height: 95px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12rem;
+    position: sticky;
+    width: 103%;
+    top: 0;
+    background-color: #f9f9f9;
+    border: 1px solid rgb(237, 231, 231);
+}
+.laptop-container{
+    position: relative;    
+}
+
+.laptop{
+    list-style: none;
+    position: absolute;
+    top: -1.8rem;
+    transition: 0.4s;
+    width: 6rem;
+}
+.laptop:hover{
+    top: -5.4rem;
+}
+.fa-laptop{
+    font-size: 30px;
+}
+
+.desktop{
+    list-style: none;
+    position: absolute;
+    top: -1.8rem;
+    transition: 0.4s;
+    width: 6rem;
+}
+.desktop:hover{
+    top: -5.4rem;
+}
+.fa-desktop{
+    font-size: 30px;
+}
+.alienware{
+    list-style: none;
+    position: absolute;
+    top: -1.8rem;
+    transition: 0.4s;
+    width: 6rem;
+}
+.alienware:hover{
+    top: -5.4rem;
+}
+.fa-alien{
+    font-size: 30px;
+}
+.vostro{
+    list-style: none;
+    position: absolute;
+    top: -1.8rem;
+    transition: 0.4s;
+    width: 6rem;
+}
+.vostro:hover{
+    top: -5.4rem;
+}
+.fa-laptop{
+    font-size: 30px;
+}
+.monitor{
+    list-style: none;
+    position: absolute;
+    top: -1.8rem;
+    transition: 0.4s;
+    width: 6rem;
+}
+.monitor:hover{
+    top: -5.4rem;
+}
+.fa-monitor{
+    font-size: 30px;
+}
+.accessories{
+    list-style: none;
+    position: absolute;
+    top: -1.8rem;
+    transition: 0.4s;
+    width: 6rem;
+}
+.accessories:hover{
+    top: -5.4rem;
+}
+.fa-headset{
+    font-size: 30px;
+}
+
+/* ================transition section ended here=================== */
+.hero-section{
+    width: 100%;
+    height: 30rem;
+    background-color: rgb(219, 237, 237);
+    margin-top: 30px;
+}
+.hero-section .left-hero-section{
+    height: 200px;
+    width: 50%;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+}
+.hero-section .left-hero-section h3{
+    margin-top: 220px;
+    color: #002a58;
+}
+.hero-section .left-hero-section h1{
+    font-size: 40px;
+    color: #002a58;
+}
+.hero-section .left-hero-section p{
+    font-weight: 600;
+    color: #002a58;
+}
+.hero-section .right-hero-section img{
+    margin-left: 700px;
+    margin-top: -175px;
+}
+.hero-section .left-hero-section .btn .shop, .learn{
+    padding: 12px;
+    margin: 20px;
+}
+.btn .shop{
+    background-color: rgb(40, 54, 156);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.btn .learn{
+    background-color: rgb(40, 54, 156);
+    border: none;
+    color: white;
+}
+
+/* ================product catalogue section started here================ */
+.product-catalogue{
+    width: 81%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 2rem;
+}
+.product{
+    width: 14rem;
+    height: 16rem;
+   text-align: center;
+   background-color: #e5e5eb;
+   box-shadow: #3a3a3f 0px 3px 8px;
+}
+.product:hover{
+    box-shadow: #13135e 0px 3px 8px;
+}
+.pro-image1{
+    background-image: url("https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/modules/notebook-inspiron-13-5330-gray-800x550.png?wid=800&hei=550");
+    width: 100%;
+    height: 11rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.pro-image2{
+    background-image: url("https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/alienware-notebooks/alienware-x14-r2-intel/spi/ng/notebook-alienware-x14-r2-gray-800x550.png?fmt=png-alpha&wid=800&hei=550");
+    width: 100%;
+    height: 11rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.pro-image3{
+    background-image: url("https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/g-series/g16-7630/spi/white/ng/notebook-g16-7630-white-800x550.psd?fmt=png-alpha&wid=800&hei=550");
+    width: 100%;
+    height: 11rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.pro-image4{
+    background-image: url("https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/category-pages/latam/dv7620nt-cnb-05000ff090-nonfpr-bk.png?$S7-png$&wid=800&hei=550&qlt=100,0&resMode=sharp2");
+    width: 100%;
+    height: 11rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.pro-image5{
+    background-image: url("https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/g-series/g16-7630/spi/white/ng/notebook-g16-7630-white-800x550.psd?fmt=png-alpha&wid=800&hei=550");
+    width: 100%;
+    height: 11rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.pro-image6{
+    background-image: url("https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/page/franchise/xps/prod-2011-tablet-xps-13-9315-blue-folio-800x550.png?fmt=png-alpha&wid=800&hei=550");
+    width: 100%;
+    height: 11rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.pro-image7{
+    background-image: url("https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/modules/notebook-inspiron-13-5330-gray-800x550.png?wid=800&hei=550");
+    width: 100%;
+    height: 11rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.pro-image8{
+    background-image: url("https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/g-series/g16-7630/spi/white/ng/notebook-g16-7630-white-800x550.psd?fmt=png-alpha&wid=800&hei=550");
+    width: 100%;
+    height: 11rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.heart, .kart{
+    width: 35px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-top: 0.5rem;
+    margin-left: 11rem;
+    opacity: 0;
+    transition: 0.3s;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(242,240,240);
+    border: none;
+}
+.product:hover .heart, .product:hover .kart{
+    opacity: 1;
+}
+.product span{
+    color: red;
+    font-weight: 600;
+    font-size: 15px;
+}
+/* ==========================container section========================= */
+.container{
+    width: 100%;
+    height: 32rem;
+    border: none;
+    margin-top: 100px;
+    background-image: linear-gradient(170deg, rgb(245, 235, 235), #002a58) ;
+}
+.container1{
+    height: 200px;
+    width: 90%;
+    border: 1px solid black;
+    margin-top: 50px;
+    background-color: #002a58;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 80px;
+    color: white;
+    border: none;
+}
+.image img{
+    height: 196px;
+    width: 196px;
+}
+.text1{
+    margin-right: 100px;
+}
+.text1 h3{
+    padding-bottom: 20px;
+}
+.text1 p{
+    padding-top: 20px;
+}
+.numbers{
+    display: flex;
+    gap: 50px ;
+    margin-right: 40px;
+}
+.container2{
+    height: 200px;
+    width: 40%;
+    margin-left: 80px;
+    margin-top: 30px;
+    background-color: #002a58;
+    color: white;
+    border: none;
+}
+.container3{
+    height: 200px;
+    width: 40%;
+    margin-left: 840px;
+    margin-top: -200px;
+    background-color: #002a58;
+    color: white;
+    border: none;
+}
+.text2 h3{
+    padding-top: 50px;
+    margin-left: 50px;
+}
+.text2 p{
+    padding-top: 50px;
+    margin-left: 50px;
+}
+.text3 h3{
+    padding-top: 50px;
+    margin-left: 50px;
+}
+.text3 p{
+    padding-top: 50px;
+    margin-left: 50px;
+}
+
+/* ===========FOOTER=========== */
+footer{
+    width: 100%;
+    height: 16rem;
+    background-color: #f6f6f6;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* border: 1px solid black; */
+    margin-top: 150px;
+    margin-bottom: 100px;
+    gap: 100px;
+}
+footer ul{
+    margin-top: 40px;
+}
+
+footer ul li{
+    list-style: none;
+    padding: 8px;
+    font-weight: 600;
+    
+}
+footer ul li:hover{
+    background-color: rgb(190, 190, 197);
+    transition: 0.6s;
+}
+.subFooterSection3{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+
+}
+.footerSection4{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 45px;
+}
+.subFooterSection4{
+    display: flex;
+    gap: 20px;
+}
+.subFooterSection4 input{
+    padding: 2px 10px;
+    outline: none;
+    border: none;
+    background-color: hwb(240 91% 7%);
+}
+.subFooterSection4 button{
+    padding: 10px 10px;
+    background-color: green;
+    border: none;
+    color: white;
+}
+.subFooterSection4 button:hover{
+    cursor: pointer;
+    background-color: rgb(92, 165, 92);
+    color: black;
+    font-size: 14px;
+}
